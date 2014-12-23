@@ -4,6 +4,8 @@
   {% include head.html %}
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    {% include nav-blog.html %}
 
     <div class="container content">
       <header class="masthead">
@@ -12,8 +14,6 @@
           <small>{{ site.tagline }}</small>
         </h3>
       </header>
-
-      {% include nav-blog.html %}
 
       <main>
         {{ content }}

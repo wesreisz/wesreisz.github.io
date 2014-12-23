@@ -12,6 +12,31 @@ title: Home
                 </div>
             </div>
 			<div class="row">
+				<div class="col-md-5">
+					<ul style="list-style: none">
+						<h3>Presentations</h3>
+						<li><a href="http://android-wear-whos-next.appspot.com">Android Wear: Who's Next</a> [<a href="https://github.com/wesreisz/Android-Wear-Whos-Next">github</a>]</li>
+						<li><a href="http://reisz-gamification.appspot.com">Hype, Myth, & Promise of Gamification</a> [<a href="https://github.com/wesreisz/reisz-gamification">github</a>]</li>
+						<li><a href="http://reisz-ltpom.appspot.com/">Lions and Tigers and Pig, Ohh My: </a> [<a href="hhttps://github.com/wesreisz/lionsAndTigersAndPigOhhMy">github</a>]</li>
+						<li><a href="http://reisz-html5.appspot.com">HTML5 Workshop</a> [<a href="https://github.com/wesreisz/html5Workshop">github</a>]</li>
+						<li><a href="http://reisz-kickass.appspot.com">Kick Ass HTML5</a> [<a href="http://www.wesleyreisz.com/repos/svn/KickAss-GAE-V2">SVN (readonly/readonly)</a>]</li>
+				    </ul>	
+				</div>
+				<div class="col-md-7" style="text-align:left;">
+					  {% assign post = site.posts.first %}
+					  {% assign content = post.content %}
+					
+					<h3>
+					{% if post.title %}
+					    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+					{% endif %}
+					</h3>
+					{{ content | strip_html | truncatewords:75}}&nbsp;
+					<a href="{{ post.url }}">Read more...</a><br><br>
+					
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-lg-12">
 				   <center>
 				   <table id="Table_01" width="240" height="82" border="0" cellpadding="0" cellspacing="0">
@@ -19,7 +44,7 @@ title: Home
 							<td style="width:60px;"><a href="http://www.twitter.com/wesreisz" rel="nofollow"><img border="0" src="/images/offTwitter.png" alt="Follow Me on Twitter" /></a></td>
 							<td style="width:60px;"><a href="http://www.facebook.com/wes.reisz"><img border="0" src="/images/offFacebook.png" alt="Friend me " width="60" height="74" /></a></td>
 						    <td style="width:60px;"><a href="http://www.linkedin.com/in/wesreisz"><img border="0" src="/images/offLinked.png" alt="Link Up" width="60" height="75" /></a></td>
-							<td style="width:60px;"><a href="#"><img border="0" src="/images/offRss.png" alt="Follow My Feed" width="60" height="75" /></a></td>
+							<td style="width:60px;"><a href="{{ site.baseurl }}atom.xml"><img border="0" src="/images/offRss.png" alt="Follow My Feed" width="60" height="75" /></a></td>
 					    </tr>
 					</table>
 					</center>

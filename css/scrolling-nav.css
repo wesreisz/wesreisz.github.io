@@ -40,22 +40,30 @@ of those sections to manage the look and feel of the site. */
 }
 
 .about-section {
-    height: 150%;
+    height: 200%;
     padding-top: 50px;
     text-align: center;
     background: #eee;
 }
 
 .services-section {
-    height: 150%;
+    height: 200%;
     padding-top: 50px;
     text-align: center;
     background: #fff;
 }
 
 .contact-section {
-    height: 150%;
+    height: 200%;
     padding-top: 50px;
     text-align: center;
     background: #eee;
+}
+
+
+@media(max-width:400px) {
+	.intro-section, .about-section, .services-section, .contact-section  {
+		padding-top: 50px;
+	    height: 400%;
+	}
 }

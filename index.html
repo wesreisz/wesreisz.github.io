@@ -47,7 +47,7 @@ title: Home
 					
 					<h3>
 					{% if post.title %}
-					    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+					    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a><br />
 					{% endif %}
 					</h3>
 					{{ content | truncatewords:145}}&nbsp;<br />

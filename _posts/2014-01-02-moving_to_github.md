@@ -56,7 +56,7 @@ So that's cool, but you can't do anything real with a static site right? Don't b
 
 Once challenge I came on with moving my site to github wasn't really with dynamic content per say. It really was how can I implement a blog without a server-side database. I vaguely remembered a talk a couple years ago, where someone mentioned a tool called [jekyll](http://jekyllrb.com/), so I started there. Turns out, Jekyll was the perfect solution, and one the community as a whole is embracing.
 
-Jekyll is a dirt simple blogging system that uses [markdown](http://en.wikipedia.org/wiki/Markdown) and the local file system. Creating a blog engine is initially built with a ruby gem, so installing Jekyll and running is as easy as:
+Jekyll is a dirt simple static site generation system that uses [markdown](http://en.wikipedia.org/wiki/Markdown) and the local file system. What does all this mean? It means it's a super simple system for blogging. Setting everything up is done with a ruby gem, so installing Jekyll and running it is as easy as:
 
 ![Installing Jekyll](/images/moving_to_github/install.png)
 

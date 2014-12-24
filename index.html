@@ -29,7 +29,7 @@ title: Home
 			<div class="row">
 				<div class="col-md-5" >
 					<ul style="list-style: none">
-						<h3 style="text-align:left;">Presentations</h3>
+						<h3 class="titles">Presentations</h3>
 						<li><a href="http://android-wear-whos-next.appspot.com">Android Wear: Who's Next</a> [<a href="https://github.com/wesreisz/Android-Wear-Whos-Next">github</a>]</li>
 						<li><a href="http://reisz-gamification.appspot.com">Hype, Myth, & Promise of Gamification</a> [<a href="https://github.com/wesreisz/reisz-gamification">github</a>]</li>
 						<li><a href="http://reisz-ltpom.appspot.com/">Lions and Tigers and Pig, Ohh My: </a> [<a href="hhttps://github.com/wesreisz/lionsAndTigersAndPigOhhMy">github</a>]</li>
@@ -38,7 +38,7 @@ title: Home
 				    </ul>
 				    <br /><br />
 					<!--twitter feed -->
-					<a class="twitter-timeline" href="https://twitter.com/wesreisz" data-widget-id="547751313384411136">Tweets by @wesreisz</a>
+					<a class="twitter-timeline" href="https://twitter.com/wesreisz" data-widget-id="547751313384411136">@wesreisz</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 				<div class="col-md-7" style="text-align:left;">
@@ -50,8 +50,8 @@ title: Home
 					    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
 					{% endif %}
 					</h3>
-					{{ content | truncatewords:150}}&nbsp;
-					<a href="{{ post.url }}">Read more...</a><br><br>
+					{{ content | truncatewords:145}}&nbsp;<br />
+					[<a href="{{ post.url }}">Read more</a>]<br><br>
 					
 				</div>
 			</div>

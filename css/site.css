@@ -74,11 +74,16 @@
 	bottom: 0;    
 	left: 0; 
 }
-
+.titles{
+	text-align:left;
+}
 @media(max-width:950px) {
     #slider {    
 		width: 700px;     
 		height: 200px;
+	}
+	.titles{
+		text-align:center;
 	}
 }
 

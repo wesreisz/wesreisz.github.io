@@ -1,15 +1,6 @@
 /*custom css*/
-.blue{
-	background-color: #99ccff;
-}
-.green{
-	background-color: #66cc33;
-}
-.yellow{
-	background-color: #FFFF66;
-}
-.red{
-	background-color: #FF0033;
+.grey{
+	background-color: #ccc;
 }
 .box{
 	border: 1px solid;
@@ -74,9 +65,19 @@
 	bottom: 0;    
 	left: 0; 
 }
+
 .titles{
 	text-align:left;
 }
+
+.wesreisz{
+	font-weight: bold !important;
+	letter-spacing: -2px;
+    font: 400 20px/1.2 'Merienda One', Helvetica, sans-serif;
+	color: rgba(0,0,0,0.7);
+	text-shadow: 3px 3px 3px #fff;
+}
+
 @media(max-width:950px) {
     #slider {    
 		width: 700px;     

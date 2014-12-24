@@ -14,7 +14,9 @@ title: Home
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    {{ post.content }}
+   	{{ post.content  | truncatewords:145}}&nbsp;<br />
+	[<a href="{{ post.url }}">Read more</a>]<br><br>
+
   </article>
   {% endfor %}
 </div>

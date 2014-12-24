@@ -7,7 +7,7 @@ title:            Wesley Reisz
 tagline:          aut disce aut discede
 url:              http://getpoole.com
 highlighter:      pygments
-paginate:         1
+paginate:         3
 paginate_path:    "blog/page:num/"
 baseurl:          /
 author:

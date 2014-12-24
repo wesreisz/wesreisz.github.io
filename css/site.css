@@ -1,16 +1,4 @@
 /*custom css*/
-.grey{
-	background-color: #ccc;
-}
-.box{
-	border: 1px solid;
-    border-radius: 12px;
-    padding: 15px;
-    margin: 2.5px;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-
 #slider {    
 	width: 100%;     
 	height: 275px;     
@@ -23,6 +11,16 @@
 	top: 0;	 
 	margin-left: 0;
 	list-style-type: none;
+}
+.grey{
+	background-color: #ccc;
+}
+.box{
+	border: 1px solid;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 2.5px;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .sliderImage {
@@ -77,6 +75,11 @@
 	color: rgba(0,0,0,0.7);
 	text-shadow: 3px 3px 3px #fff;
 }
+
+.posts{
+	padding:50px 10px 150px 10px;
+}
+
 
 @media(max-width:950px) {
     #slider {    

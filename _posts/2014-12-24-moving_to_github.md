@@ -37,26 +37,26 @@ Setting aside for just a second that Github uses git (my personal favorite versi
 
 > *Github is where collaboration takes place with code today*
 
-Companies from Microsoft to jQuery all host code repositories in the open. Why is that so special? Any project on github, allows you to freely see the source code and, even, fork it (the name with give to creating your own editable copy). Find an error in a your favorite library? Chances are it's on github. Fork the repo, correct the issue, and make a pull request to the maintainer. You have made the world a better place. You have fixed and offered help to others using that same library. That is the power of open source and is at the heart of collaboration in software. Github while not unique in the space, is the defacto standard for today's open source developers. 
+Companies from Microsoft to jQuery all host code repositories in the open. Why is that so special? Any project on github, allows you to freely see the source code and, even, fork it (the name we give to creating your own editable copy of someone's Github hosted code). Find an error in a your favorite library? Chances are it's on github. Fork the repo, correct the issue, and make a pull request to the maintainer. You have made the world a better place. You have fixed and offered help to others using that same library. That is the power of open source and is at the heart of collaboration in software. Github, while not unique in the space, is the defacto standard for today's open source developers. 
 
-One of the features github offers is github pages. Github pages are static websites that are either: disconnected branches with your project's source code and a user/organization website created following the pattern <username>.github.io. It essentially allows you to host your site using the version control power of git. As developers are already in github, it becomes trivial to host your content next to the source code.
+One of the features Github offers is Github pages. Github pages are static websites that are either: disconnected branches with your project's source code (make a branch called gh-pages to use them) and a user/organization website created following the pattern <username>.github.io. It essentially allows you to host your site using the version control power of git. As developers are already in Github for version control, it becomes trivial to host your project content next to the source code.
 	
-Without trying to go too deep here (you can find much more detail on [github pages](https://pages.github.com/) here), here's the basics steps I went through to get started with my site on github:
+Without trying to go too deep here (you can find much more detail at [github pages](https://pages.github.com/)), here's the basics steps I went through to get started with my site on github:
 
-1. Create a new github repository called wesreisz.github.io (use your username in place of mine)
-1. Clone a starter template you like (I used bootstrap and a project template from [here](http://startbootstrap.com/)).
+1. Created a new github repository called wesreisz.github.io (use your username in place of mine)
+1. Cloned a starter template you like (I used bootstrap and a project template from [here](http://startbootstrap.com/)).
 1. Committed the project and pushed my site.
 1. Waited about 20-30 minutes before I could view it at wesreisz.github.io. After the initial deployment, site pushes are almost immediate.
-1. Customized my site the why I wanted it
+1. Customized my site the way I want
 1. Added a CNAME file and updated my DNS to point to github
 
 ### Adding a blog to your static site
 
 So that's cool, but you can't do anything real with a static site right? Don't be so sure. With the move to more and more javascript, we are moving processing from the server back to the client. So depending on your needs, it is entirely possible that you can host everything a simple site needs locally.
 
-Once challenge I came on with moving my site to github wasn't really with dynamic content per say. It really was how can I implement a blog without a server-side database. I vaguely remembered a talk a couple years ago, where someone mentioned a tool called [jekyll](http://jekyllrb.com/), so I started there. Turns out, Jekyll was the perfect solution, and one the community as a whole is embracing.
+One challenge I came on with moving my site to Github wasn't really with dynamic content per say. It really was how can I implement a blog without a server-side database. I vaguely remembered a talk a couple years ago, where someone mentioned a tool called [jekyll](http://jekyllrb.com/), so I started there. Turns out, Jekyll was the perfect solution, and one the community as a whole is embracing.
 
-Jekyll is a dirt simple static site generation system that uses [markdown](http://en.wikipedia.org/wiki/Markdown) and the local file system. What does all this mean? It means it's a super simple system for blogging. Setting everything up is done with a ruby gem, so installing Jekyll and running it is as easy as:
+Jekyll is a dirt simple static site generation tool built with Ruby that uses [markdown](http://en.wikipedia.org/wiki/Markdown) and the local file system. What does all this mean? It means it's a super simple system for blogging that has none of the performance issues with querying a db. It's just reading the filesystem. Setting everything up is done with a ruby gem, so installing Jekyll and running it is as easy as:
 
 ![Installing Jekyll](/images/moving_to_github/install.png)
 
@@ -68,7 +68,7 @@ starts a webserver that you can view locally and adding
 ```
 jekyll serve --watch
 ```
-allows you to make realtime changes as you go and get immediate feedback. How cool is that? All that was left was for me to integrate into my newly designed sight. (...and of course push to github.)
+allows you to make realtime changes as you go and get immediate feedback. How cool is that? All that was left was for me to integrate into my newly designed site. (...and of course push to github.)
 
 ### Recap
 So let's recap. I have:
@@ -78,6 +78,7 @@ So let's recap. I have:
 * markdown for editing of my blog content
 * git version control for my blog and website 
 * local development environment where I can see changes
+* Ohh... and, I've freed up my hosted VPS for some work with Docker.
 
 Not bad! [http://www.wesleyreisz.com](http://www.wesleyreisz.com)
 
